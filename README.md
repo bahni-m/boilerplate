@@ -5,4 +5,4 @@ Responsive boilerplate for Sass, Compass, Javascript, Breakpoint, Modernizr, Boo
 2. gulp watch
 3. compass watch
 
-have fun:)
+have fun :)
