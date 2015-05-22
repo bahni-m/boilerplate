@@ -1,0 +1,165 @@
+/*================================
+=            Elements            =
+================================*/
+html{
+	body{
+	@include full-height();
+		color: $textColor;	
+	}
+}
+
+header{
+	background: transparent !important;
+	margin: 0 0 $padding * 2 0;	
+	padding: $padding - 10  0 $padding 0;
+}
+
+section{
+	margin: 0 0 $padding * 2 0;
+}
+
+footer{
+	background: darken($bgColor, 2.5%);
+	margin: $padding + 10px 0 0 0;	
+	padding: $padding - 10px 0 $padding / 2 0;
+}
+
+a{
+	color: darken($bgColor, 10%);
+	&:hover{color: $emColor;}
+	text-decoration: none !important;
+	@include hover-transition(color);
+}
+
+/*==================================
+=            Typography            =
+==================================*/
+html{
+	body{
+		font-family: "Roboto Slab", serif !important;
+		font-size: $defFontSize !important;
+	}
+}
+
+/*==============================
+=            NavBar            =
+==============================*/
+.navBar{
+
+}
+
+/*===============================
+=            Wrapper            =
+===============================*/
+.wrapper{
+	color: $textColor !important;
+	background: $bgColor;
+}
+
+/*===============================
+=            Opening            =
+===============================*/
+.opening{
+	@include full-height();
+	background-color: $bgColor;
+	
+	.container{
+		@include vertical-center();
+	}
+
+	article{
+		@include float-center();
+	}
+}
+
+/*===================================
+=            SectionOne            =
+===================================*/
+.sectionOne{
+	margin-top: $padding * 2 !important;
+	article{
+		@include float-center();
+	}
+
+}
+
+/*===================================
+=            SectionTwo            =
+===================================*/
+.sectionTwo{
+
+	article{
+		@include float-center();
+	}
+}
+
+/*=====================================
+=            SectionThree            =
+=====================================*/
+.sectionThree{
+	article{
+		@include float-center();
+	}
+}
+
+/*====================================
+=            SectionFour            =
+====================================*/
+.sectionFour{
+
+	article{
+		@include float-center();
+	}
+}
+
+/*====================================
+=            SectionFive            =
+====================================*/
+.sectionFive{
+
+	article{
+		@include float-center();
+	}
+}
+
+
+/*======================================
+=            SectionClosing            =
+======================================*/
+.sectionClosing{
+
+	article{
+		@include float-center();
+	}
+
+	button{
+		margin: $padding / 2 5px 0 5px;
+		@include ghost-button($textColor, $bgColor);
+		@include hover-transition(color);
+		@include hover-transition(border-color);
+		@include hover-transition(background-color);
+	}
+}
+
+/*====================================
+=            FooterNavBar            =
+====================================*/
+.footerNavBar{
+	.visible-md, .visible-lg{
+		span{
+			@include footer-text-float(right, $padding);
+		}
+	}
+
+	.visible-sm, .visible-xs{
+		span{
+			@include footer-text-float(none, $padding / 4);
+			&.spanException{
+				@include footer-text-float(none, 0);
+			}
+		}
+	}
+}
+
+
+
