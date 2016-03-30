@@ -9,7 +9,8 @@
   "author": "Bahni",
   "license": "BSD-2-Clause",
   "devDependencies": {
-    "gulp": "~3.8.11",
-    "browser-sync": "~2.0.1"
+    "gulp": ">=3.9.0",
+    "browser-sync": ">=2.11.0",
+    "bootstrap": ">=3.3.0"
   }
 }
